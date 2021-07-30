@@ -44,7 +44,7 @@ For this project, we will use Star Schema consisting of one **Fact** table and f
 A simple star schema was employed for designing the tables.
 
 <p align="middle">
-  <img src="images/table_design.JPG" />
+  <img src="images/table_design.png" />
 
 ## Files
 
@@ -76,7 +76,6 @@ chmod +x spark_emr_execute_job.sh
 As soon as you ran step 2 script the following events can be observed in AWS EMR cluster.
   
 ### Cluster creation 
-  
 <p align="middle">
   <img src="images/cluster_starting.JPG" />
   
@@ -95,7 +94,11 @@ As soon as you ran step 2 script the following events can be observed in AWS EMR
   <img src="images/cluster_jobs_succeeded.JPG" />
   
  ### Data Lake final output tables in S3
- Check the target S3 bucket and confirm that the tables have been written
+ Check the target S3 bucket and confirm that the tables have been written and also check the `parquet files`.
   <p align="middle">
   <img src="images/datalake_output_tables.JPG" />
+    
+ As you see the processed data is stored back to S3 as `parquet files`.
+   <p align="middle">
+  <img src="images/output_tables_content.JPG" />
 
